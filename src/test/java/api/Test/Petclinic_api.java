@@ -18,7 +18,7 @@ public class Petclinic_api {
 @Test	
 	public void testResponsecode()
 	{
-		Response resp = RestAssured.get("http://35.154.35.155:8080/petclinic/vets.json");
+		Response resp = RestAssured.get("http://13.233.190.102:8080/petclinic/vets.json");
 		int code = resp.getStatusCode();
 		System.out.println("status code is" +code);
 
@@ -29,7 +29,7 @@ public class Petclinic_api {
 @Test	
 public void testResponse()
 {
-	Response resp = RestAssured.get("http://35.154.35.155:8080/petclinic/vets.json");
+	Response resp = RestAssured.get("http://13.233.190.102:8080/petclinic/vets.json");
 	String data = resp.asString();
 	System.out.println("Data is" +"\n" + data);
 
